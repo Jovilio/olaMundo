@@ -1,0 +1,365 @@
+@keyframes aparecerTextoDeBoasVindas {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerMidiaSocial {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerPerfil {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerProjectos {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerCards {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerReact {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerExpo {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body::-webkit-scrollbar {
+    background: #af002cd5;
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.app {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 20px 20px;
+    width: 100%;
+    background: none;
+    font-size: 10pt;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.apresentacao {
+    text-align: center;
+    width: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao>div {
+    background: black;
+    transition: all 0.3s linear;
+}
+
+.boasVindas {
+    animation-name: aparecerTextoDeBoasVindas;
+    animation-duration: 1s;
+    font-size: 150pt;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7a18, #af002d,
+            whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+footer {
+    animation-name: aparecerMidiaSocial;
+    animation-duration: 1.8s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+footer>p {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 12pt;
+    color: whitesmoke;
+}
+
+.social>a {
+    text-decoration: none;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+.social>a>img {
+    width: 100px;
+    transform-style: flat;
+    filter: grayscale(1);
+}
+
+.social>a>img:hover {
+    filter: grayscale(0);
+
+}
+
+/* sessão 2 */
+.s2 {
+    /* display: none; */
+    animation-name: aparecerPerfil;
+    animation-duration: 1s;
+    background: #68001a;
+    width: 100%;
+    color: black;
+    padding: 0px 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.s2>div {
+    width: 50%;
+    padding: 50px;
+    text-align: left;
+}
+
+.s2>div:nth-child(1) {
+    animation-name: aparecerPerfil;
+    animation-duration: 1s;
+    color: black;
+    padding: 50px;
+    color: #af002d;
+    text-transform: uppercase;
+}
+
+.s2>div:nth-child(1)>h1 {
+    font-size: 60pt;
+}
+
+.s2>div:nth-child(1)>h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30pt;
+}
+
+.s2>div:nth-child(2) {
+    animation-name: aparecerPerfil;
+    animation-duration: 2s;
+    text-transform: uppercase;
+    background: none;
+    color: white;
+}
+
+.s2>div:nth-child(2)>h1 {
+    font-size: 50pt;
+}
+
+.mais {
+    background: none;
+    border-radius: 10px;
+}
+
+.mais>span {
+    text-transform: capitalize;
+    color: white;
+    font-size: 12pt;
+    padding: 20px;
+    background: #68001ad8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.8;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mais>div {
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 0px;
+    background: #68001a;
+}
+
+.usados>div:nth-child(1) {
+    background: #68001a;
+    padding: 40px 100px;
+    width: 100%;
+}
+
+.usados>div:nth-child(1)>h1 {
+    animation-name: aparecerProjectos;
+    animation-duration: 1s;
+    font-size: 60pt;
+    text-transform: uppercase;
+}
+
+.usados>div:nth-child(2) {
+    background: white;
+    color: black;
+    padding: 100px;
+    position: relative;
+}
+
+.usados>div:nth-child(2)>img {
+    width: 100px;
+    position: absolute;
+    left: 10%;
+    top: -25px;
+}
+
+/* aqui  */
+.card {
+    animation-name: aparecerCards;
+    animation-duration: 1s;
+    background: #68001a;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    transition: all 0.2s linear;
+    padding: 20px 50px;
+}
+
+.cont:hover {
+    background: #490012;
+    width: 60%;
+}
+
+.actualmente {
+    background: #68001a25;
+    padding: 40px 100px;
+    color: #68001a;
+}
+
+.actualmente>div:nth-child(1)>h1 {
+    animation-name: aparecerProjectos;
+    animation-duration: 1s;
+    font-size: 50pt;
+    text-transform: uppercase;
+}
+
+.actualmente>div:nth-child(1)>p {
+    animation-name: aparecerProjectos;
+    animation-duration: 1s;
+}
+
+.actualmente>div:nth-child(2) {
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.actualmente>div:nth-child(2)>img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.actualmente>div:nth-child(2)>img:nth-child(1) {
+    animation-name: aparecerReact;
+    animation-duration: 1s;
+    transform: translate(-100px, 20px);
+    box-shadow: 0px 0px 0px 10px #68001a49;
+}
+
+.actualmente>div:nth-child(2)>img:nth-child(2) {
+    animation-name: aparecerExpo;
+    animation-duration: 1s;
+    transform: translate(100px, -20px);
+    box-shadow: 0px 0px 0px 10px #68001a49;
+}
