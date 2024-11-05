@@ -59,10 +59,10 @@
         /* border-radius: 20px; */
     }
     .actualmente>div:nth-child(2)>img:nth-child(1) {
-        transform: translate(-100px, 20px);
+        transform: translate(-40px, 20px);
     }
     
     .actualmente>div:nth-child(2)>img:nth-child(2) {
-        transform: translate(100px, -20px);
+        transform: translate(40px, 0px);
     }
 }
