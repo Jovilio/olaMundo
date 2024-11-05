@@ -1,0 +1,68 @@
+.actualmente {
+    background: #68001a25;
+    color: #68001a;
+    padding: 40px 100px;
+}
+
+.actualmente>div:nth-child(1)>h1 {
+    animation-name: aparecerProjectos;
+    animation-duration: 1s;
+    font-size: 50pt;
+    text-transform: uppercase;
+}
+
+.actualmente>div:nth-child(1)>p {
+    animation-name: aparecerProjectos;
+    animation-duration: 1s;
+}
+
+.actualmente>div:nth-child(2) {
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.actualmente>div:nth-child(2)>img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.actualmente>div:nth-child(2)>img:nth-child(1) {
+    animation-name: aparecerReact;
+    animation-duration: 1s;
+    transform: translate(-100px, 20px);
+    box-shadow: 0px 0px 0px 10px #68001a49;
+}
+
+.actualmente>div:nth-child(2)>img:nth-child(2) {
+    animation-name: aparecerExpo;
+    animation-duration: 1s;
+    transform: translate(100px, -20px);
+    box-shadow: 0px 0px 0px 10px #68001a49;
+}
+
+@media (min-width: 320px) and (max-width: 393px) {
+    .actualmente {
+        margin-top: 100px;
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    .actualmente>div:nth-child(1)>h1 {
+       
+        font-size: 30pt;
+        /* text-transform: uppercase; */
+    }
+    .actualmente>div:nth-child(2)>img {
+        width: 180px;
+        /* border-radius: 20px; */
+    }
+    .actualmente>div:nth-child(2)>img:nth-child(1) {
+        transform: translate(-100px, 20px);
+    }
+    
+    .actualmente>div:nth-child(2)>img:nth-child(2) {
+        transform: translate(100px, -20px);
+    }
+}

@@ -1,0 +1,10 @@
+.divisoria {
+    /* background: #68001a; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: orange;
+    width: 100%;
+    padding: 2px;
+
+}

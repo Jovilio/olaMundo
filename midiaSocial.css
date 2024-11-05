@@ -1,0 +1,53 @@
+
+.midiaSocial {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: white;
+    z-index: 20;
+    animation-name: aparecerMidiaSocial;
+    animation-duration: 1.8s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.midiaSocial>p {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 12pt;
+    color: whitesmoke;
+}
+
+.social>a {
+    text-decoration: none;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+.social>a>img {
+    width: 100px;
+    transform-style: flat;
+    filter: grayscale(1);
+}
+
+.social>a>img:hover {
+    filter: grayscale(0);
+
+}

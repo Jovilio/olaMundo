@@ -1,0 +1,70 @@
+.apresentacao {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pano {
+   display: none;
+}
+
+.apresentacao>div {
+    /* background: black; */
+    transition: all 0.3s linear;
+}
+
+.boasVindas {
+    z-index: 6;
+    animation-name: aparecerTextoDeBoasVindas;
+    animation-duration: 2s;
+    font-size: 150pt;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7a18, #af002d,
+            whitesmoke);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+/* para iphone  */
+@media (min-width: 320px) and (max-width: 393px) {
+
+    .pano {
+        display: block;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background: #68001a;
+        /* background: rgba(0, 0, 0, 0.178); */
+        opacity: 0.3;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .apresentacao {
+
+        /* background: orange; */
+        width: 100%;
+        background-image: url('cerebros.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .boasVindas {
+        font-size: 50pt;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
